@@ -11,7 +11,7 @@ services:
       # The type of server to use chosen from: https://docker-minecraft-server.readthedocs.io/en/latest/types-and-platforms/
       TYPE: "AUTO_CURSEFORGE"
       # The Curse Forge Developer Console API key to use type AUTO_CURSEFORGE. Escape $ symbols with an additional $
-      CF_API_KEY: "$2a$10$KdAiChy8buaFflzefbBm2eAI/iDnmoyd5vAcLRvXNOdOY4Fh/Gj.K"
+      CF_API_KEY: ""
       # The Curse Forge URL of the modpack to use. Add the verion URL of the specific version at the end to pin the modpack version
       CF_PAGE_URL: "https://www.curseforge.com/minecraft/modpacks/all-the-mods-8/files/4633481"
       # The project ID of mods to exclude.
@@ -28,4 +28,5 @@ services:
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - S:\mcdata:/data
+
     restart: on-failure:3
